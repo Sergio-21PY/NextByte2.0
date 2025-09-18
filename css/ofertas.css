@@ -1,0 +1,63 @@
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;          /* Permite que las tarjetas bajen de línea si no caben */
+    gap: 20px;                /* Espacio entre tarjetas */
+    justify-content: center;  /* Centra las tarjetas */
+    padding: 20px;            /* Espacio interno opcional */
+}
+
+.oferta {
+    flex: 1 1 300px;          /* Crece, se encoge, ancho base de 300px */
+    max-width: 300px;         /* No excede 300px */
+    background-color: #fff;   /* Fondo blanco opcional */
+    border-radius: 10px;      /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+    text-decoration: none;    /* Quita subrayado de enlace */
+    color: inherit;           /* Mantiene color del texto */
+    overflow: hidden;         /* Para que bordes y sombras se vean bien */
+    transition: transform 0.3s; /* Efecto hover */
+}
+
+.oferta:hover {
+    transform: translateY(-5px); /* Le da efecto de "levantar" al pasar el mouse */
+}
+
+/* Imagen dentro de la tarjeta */
+.oferta img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajustes de texto y valor */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.valor span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.valor p {
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .oferta {
+        flex: 1 1 45%; /* Dos tarjetas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .oferta {
+        flex: 1 1 100%; /* Una tarjeta por fila en móvil */
+    }
+}

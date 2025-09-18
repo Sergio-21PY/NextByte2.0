@@ -1,0 +1,131 @@
+/* Header más claro y moderno */
+.header {
+background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 10;
+}
+
+/* Contenedor del header */
+.header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo-empresa {
+    height: 150px;
+}
+
+/* Navegación */
+.main-nav {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex: 1;
+}
+
+.main-nav .nav-link {
+    color: #ffffff;           /* letras blancas */
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+    color: #ffeb3b;           /* amarillo brillante */
+    background: rgba(255, 255, 255, 0.1); /* ligero fondo */
+    transform: translateY(-2px);
+}
+
+.main-nav .nav-link.active {
+    color: #ffeb3b;           /* amarillo para activo */
+    font-weight: 700;
+}
+
+.nav-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover más luminoso */
+.nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Barra inferior activa */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffeb3b; /* amarillo brillante */
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+}
+
+/* Carrito al extremo derecho */
+.header-actions button,
+.header-actions span {
+    color: #000000;              /* letras blancas en carrito */
+    font-weight: 600;
+}
+
+
+.nav-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(255,255,255,0.1); /* más claro */
+        padding: 15px;
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        text-align: center;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .header-actions {
+        margin-top: 10px;
+    }
+}
