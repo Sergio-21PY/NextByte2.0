@@ -1,6 +1,6 @@
-/* Header más claro y moderno */
 .header {
-background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
+    background: linear-gradient(90deg, #2c003e, #4a148c);
+    padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     position: relative;
     z-index: 10;
@@ -10,7 +10,7 @@ background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
 .header .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* logo izquierda, nav centro, carrito derecha */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,26 +30,6 @@ background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
     flex: 1;
 }
 
-.main-nav .nav-link {
-    color: #ffffff;           /* letras blancas */
-    font-weight: 600;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.main-nav .nav-link:hover {
-    color: #ffeb3b;           /* amarillo brillante */
-    background: rgba(255, 255, 255, 0.1); /* ligero fondo */
-    transform: translateY(-2px);
-}
-
-.main-nav .nav-link.active {
-    color: #ffeb3b;           /* amarillo para activo */
-    font-weight: 700;
-}
-
 .nav-link {
     position: relative;
     color: #fff;
@@ -60,33 +40,31 @@ background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
     transition: all 0.3s ease;
 }
 
-/* Hover más luminoso */
 .nav-link:hover {
     background: rgba(255,255,255,0.2);
     color: #fff;
     transform: translateY(-2px);
 }
 
-/* Barra inferior activa */
 .nav-link.active::after {
     content: '';
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #ffeb3b; /* amarillo brillante */
+    background: #ffeb3b;
     bottom: -5px;
     left: 0;
     border-radius: 2px;
 }
 
-/* Carrito al extremo derecho */
+/* Carrito */
 .header-actions button,
 .header-actions span {
-    color: #000000;              /* letras blancas en carrito */
+    color: #000000;
     font-weight: 600;
 }
 
-
+/* Botón hamburguesa */
 .nav-toggle {
     display: none;
     font-size: 28px;
@@ -96,18 +74,13 @@ background: linear-gradient(90deg, #2c003e, #4a148c);    padding: 15px 0;
     cursor: pointer;
 }
 
-/* Responsive */
+/* Responsive solo nav */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .main-nav {
         display: none;
         flex-direction: column;
         gap: 15px;
-        background: rgba(255,255,255,0.1); /* más claro */
+        background: rgba(255,255,255,0.1);
         padding: 15px;
         border-radius: 8px;
         position: absolute;

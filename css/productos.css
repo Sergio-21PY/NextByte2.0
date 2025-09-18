@@ -1,0 +1,112 @@
+/* Contenedor principal de la página */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Galería izquierda */
+.galeria {
+    flex: 1 1 45%; /* Ocupa casi la mitad del espacio */
+    max-width: 500px;
+}
+
+.galeria .principal {
+    position: relative;
+}
+
+.galeria .principal > img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.galeria .principal > img:hover {
+    transform: scale(1.05);
+}
+
+/* Tag de oferta */
+.oferta-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+/* Imágenes secundarias */
+.secundarias {
+    display: flex;
+    gap: 10px;
+}
+
+.secundarias img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.secundarias img:hover {
+    transform: scale(1.1);
+    border-color: #2575fc;
+}
+
+.detalles-producto {
+    flex: 1 1 45%; /* Ocupa la otra mitad del espacio */
+    max-width: 500px;
+}
+
+.detalles-producto h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.detalles-producto ul {
+    list-style: disc inside;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.valor p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2575fc;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria .principal > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .secundarias img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .detalles-producto {
+        max-width: 90%;
+        text-align: center;
+    }
+}
