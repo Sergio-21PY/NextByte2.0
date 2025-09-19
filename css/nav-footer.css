@@ -1,0 +1,263 @@
+/* ========== RESET GENERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px; /* deja espacio para el header fijo */
+    padding-bottom: 120px; /* deja espacio para el footer fijo */
+}
+
+/* ========== HEADER ========== */
+.header {
+    background: linear-gradient(90deg, #2c003e, #4a148c);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 15px;
+    gap: 15px;
+}
+
+.logo-empresa {
+    height: 100%;
+    max-height: 150px;
+}
+
+/* Nav */
+.main-nav {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Carrito */
+.header-actions {
+    position: relative;
+}
+
+.cart-btn {
+    background: #ffeb3b;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background: #fdd835;
+}
+
+.vista-previa-carrito {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding: 15px;
+    width: 250px;
+    z-index: 2000;
+}
+
+.header-actions:hover .vista-previa-carrito {
+    display: block;
+}
+
+/* ========== OFERTAS / CARDS ========== */
+.ofertas {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.oferta {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.oferta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+/* ========== FOOTER FIJO ======== */
+.footer {
+    background: linear-gradient(90deg, #2c003e, #4a148c);
+    color: #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 15px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor interno */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Lado izquierdo */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.site-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.category-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #ffeb3b;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #444;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background: #ffeb3b;
+    color: #333;
+}
+
+/* Lado derecho: newsletter */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-signup {
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.email-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-btn {
+    background: #ffeb3b;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background: #fdd835;
+}
+
+
