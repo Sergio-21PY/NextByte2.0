@@ -13,42 +13,44 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
+
 </head>
 
 <body>
 
     <header class="header">
-            <div class="container">
-                <div class="header-content">
-                    <div class="logo">
-                        <img src="imagenes/logo-empresa/logo-removebg-preview.png" class="logo-empresa" alt="NextByte Logo">
-                    </div>
-                    <nav class="main-nav">
-                        <a href="index.html" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">Productos</a>
-                        <a href="#" class="nav-link">Nosotros</a>
-                        <a href="#" class="nav-link">Blogs</a>
-                        <a href="#" class="nav-link">Contacto</a>
-                    </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="imagenes/logo-empresa/logo-removebg-preview.png" class="logo-empresa" alt="NextByte Logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Productos</a>
+                    <a href="#" class="nav-link">Nosotros</a>
+                    <a href="#" class="nav-link">Blogs</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
 
-                    <div class="header-actions">
-                        <button id="btnCarritoVistaPrevia" class="cart-btn">
-                            🛒 Carrito (<span id="contador-carrito">0</span>)
-                        </button>
+                <div class="header-actions">
+                    <button id="btnCarritoVistaPrevia" class="cart-btn">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </button>
 
-                        <div id="vista-previa-carrito" class="vista-previa-carrito">
-                            <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
-                            <ul id="lista-productos-previa"></ul>
-                            <div class="acciones-previa">
-                                <p>Total: <span id="total-previa">$0</span></p>
-                                <button id="btnVerCarritoCompleto">Ver Carrito</button>
-                            </div>
+                    <div id="vista-previa-carrito" class="vista-previa-carrito">
+                        <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
+                        <ul id="lista-productos-previa"></ul>
+                        <div class="acciones-previa">
+                            <p>Total: <span id="total-previa">$0</span></p>
+                            <button id="btnVerCarritoCompleto">Comprar</button>
+                            <button id="btn-vaciar-carrito">Vaciar Carrito</button>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
 
     <div class="main-content">
@@ -63,8 +65,8 @@
                 </div>
             </div>
         </div>
-
         <div class="detalles-producto">
+            <img src="imagenes/mouse/g502-heroe.jpg" alt="Logitech G502 Hero" style="display:none;">
             <div class="nombre-producto">
                 <h2>Logitech G502 Hero</h2>
             </div>
@@ -84,35 +86,39 @@
             <div class="valor">
                 <p>$42.990</p>
             </div>
-
-
-        <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <span class="site-name">Next Byte</span>
-                    <div class="category-links">
-                        <a href="#" class="footer-link">Instagram</a>
-                        <span>|</span>
-                        <a href="#" class="footer-link">Facebook</a>
-                    </div>
-                    <div class="social-icons">
-                        <span class="social-icon">📧</span>
-                        <span class="social-icon">📘</span>
-                    </div>
-                </div>
-
-                <div class="footer-right">
-                    <p class="newsletter-text">Mantente al día y únete a nuestro Newsletter.</p>
-                    <div class="newsletter-signup">
-                        <input type="email" placeholder="Tu correo" class="email-input">
-                        <button class="subscribe-btn">Suscríbete</button>
-                    </div>
-                </div>
+            <div>
+                <button class="btn btn-comprar">Comprar</button>
+                <button class="btn btn-agregar">Agregar al carrito</button>
             </div>
-        </div>
-    </footer>
 
-    <script src="js/intercambio-imagenes.js"></script>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <span class="site-name">Next Byte</span>
+                            <div class="category-links">
+                                <a href="#" class="footer-link">Instagram</a>
+                                <span>|</span>
+                                <a href="#" class="footer-link">Facebook</a>
+                            </div>
+                            <div class="social-icons">
+                                <span class="social-icon">📧</span>
+                                <span class="social-icon">📘</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-right">
+                            <p class="newsletter-text">Mantente al día y únete a nuestro Newsletter.</p>
+                            <div class="newsletter-signup">
+                                <input type="email" placeholder="Tu correo" class="email-input">
+                                <button class="subscribe-btn">Suscríbete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="js/intercambio-imagenes.js"></script>
+            <script src="js/carrito.js"></script>
 
 </body>
