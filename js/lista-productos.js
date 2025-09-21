@@ -75,7 +75,7 @@ function formatearPrecio(precio) {
 function mostrarProductos(productosMostrar) {
     const productosGrid = document.getElementById('productos-grid');
     productosGrid.innerHTML = '';
-    
+
     productosMostrar.forEach(producto => {
         const productoElement = document.createElement('div');
         productoElement.className = 'producto-card';
@@ -89,7 +89,7 @@ function mostrarProductos(productosMostrar) {
                 <button class="producto-btn" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
             </div>
         `;
-        
+
         productosGrid.appendChild(productoElement);
     });
 }
@@ -98,17 +98,17 @@ function mostrarProductos(productosMostrar) {
 function filtrarProductos() {
     const categoriaSeleccionada = document.querySelector('.categoria-btn.active').dataset.categoria;
     const precioMaximo = parseInt(document.getElementById('rango-precio').value);
-    
+
     let productosFiltrados = productos;
-    
+
     // Filtrar por categoría
     if (categoriaSeleccionada !== 'todos') {
         productosFiltrados = productosFiltrados.filter(producto => producto.categoria === categoriaSeleccionada);
     }
-    
+
     // Filtrar por precio
     productosFiltrados = productosFiltrados.filter(producto => producto.precio <= precioMaximo);
-    
+
     mostrarProductos(productosFiltrados);
 }
 
@@ -119,24 +119,24 @@ function agregarAlCarrito(idProducto) {
 }
 
 // Inicializar la página
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mostrar todos los productos inicialmente
     mostrarProductos(productos);
-    
+
     // Configurar eventos para los filtros
     document.querySelectorAll('.categoria-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active'));
             this.classList.add('active');
             filtrarProductos();
         });
     });
-    
+
     // Configurar evento para el rango de precio
     const rangoPrecio = document.getElementById('rango-precio');
     const valorPrecio = document.getElementById('valor-precio');
-    
-    rangoPrecio.addEventListener('input', function() {
+
+    rangoPrecio.addEventListener('input', function () {
         valorPrecio.textContent = `Hasta: ${formatearPrecio(parseInt(this.value))}`;
         filtrarProductos();
     });
