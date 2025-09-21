@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+.top {
+    background: #222;
+    color: #fff;
+    padding: 16px 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.nav-title {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.nav-links a:hover {
+    background: #444;
+}
+.envios-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+}
+.envios-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.busqueda-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+.busqueda-bar input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 220px;
+}
+.busqueda-bar button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.busqueda-bar button:hover {
+    background: #444;
+}
+.envio-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+}
+.envio-item:last-child {
+    border-bottom: none;
+}
+.envio-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 18px;
+}
+.envio-info {
+    flex: 1;
+}
+.envio-nombre {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.envio-fecha, .envio-direccion {
+    color: #888;
+    font-size: 0.95rem;
+}
+.envio-estado {
+    font-size: 0.95rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-left: 12px;
+}
+.estado-entregado { background: #e6f4ea; color: #1a7f37; }
+.estado-en-camino { background: #e3f2fd; color: #1565c0; }
+.estado-pendiente { background: #fff4e5; color: #b26a00; }
+.envios-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 32px;
+}
+.volver-btn {
+    padding: 10px 32px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+.volver-btn:hover {
+    background: #444;
+}
+@media (max-width: 600px) {
+    .envios-container { padding: 16px 6px; }
+    .envio-img { width: 40px; height: 40px; }
+    .busqueda-bar input { width: 120px; }
+}

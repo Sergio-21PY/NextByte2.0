@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de Compras | NextByte</title>
+    <link rel="stylesheet" href="css/historial.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">NextByte</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="#">Envios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="historial-container">
+        <div class="historial-title">Historial de Compras</div>
+        <div class="busqueda-bar">
+            <input type="text" id="busqueda-input" placeholder="Buscar producto...">
+            <button onclick="filtrarCompras()">Buscar</button>
+        </div>
+        <div id="compras-list">
+            <div class="compra-item" data-nombre="Mouse Logitech">
+                <img src="imagenes/mouse/mouse-img3.webp" alt="Mouse Logitech" class="compra-img">
+                <div class="compra-info">
+                    <div class="compra-nombre">Mouse Logitech</div>
+                    <div class="compra-fecha">Comprado: 12 Sep 2025</div>
+                </div>
+                <span class="compra-estado estado-entregado">Entregado</span>
+            </div>
+            <div class="compra-item" data-nombre="Teclado Ajazz">
+                <img src="imagenes/teclado/teclado-ajazz.jpg" alt="Teclado Ajazz" class="compra-img">
+                <div class="compra-info">
+                    <div class="compra-nombre">Teclado Ajazz</div>
+                    <div class="compra-fecha">Comprado: 5 Sep 2025</div>
+                </div>
+                <span class="compra-estado estado-entregado">Entregado</span>
+            </div>
+            <div class="compra-item" data-nombre="Monitor">
+                <img src="imagenes/monitor/diagonal-monitor.jpg" alt="Monitor" class="compra-img">
+                <div class="compra-info">
+                    <div class="compra-nombre">Monitor</div>
+                    <div class="compra-fecha">Comprado: 28 Ago 2025</div>
+                </div>
+                <span class="compra-estado estado-pendiente">Pendiente</span>
+            </div>
+            <div class="compra-item" data-nombre="Mouse Logitech">
+                <img src="imagenes/mouse/mouse-img3.webp" alt="Mouse Logitech" class="compra-img">
+                <div class="compra-info">
+                    <div class="compra-nombre">Mouse Logitech</div>
+                    <div class="compra-fecha">Comprado: 15 Ago 2025</div>
+                </div>
+                <span class="compra-estado estado-cancelado">Cancelado</span>
+            </div>
+        </div>
+        <div class="historial-actions">
+            <a href="perfil.html" class="volver-btn">Volver al Perfil</a>
+            <a href="index.html" class="volver-btn">Volver a Home</a>
+        </div>
+    </div>
+    <script src="js/historial.js"></script>
+</body>
+</html>

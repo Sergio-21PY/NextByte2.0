@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Envíos | NextByte</title>
+    <link rel="stylesheet" href="css/envios.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">NextByte</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="envios.html">Envios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="envios-container">
+        <div class="envios-title">Tus Envíos</div>
+        <div class="busqueda-bar">
+            <input type="text" id="busqueda-envio" placeholder="Buscar envío o producto...">
+            <button onclick="filtrarEnvios()">Buscar</button>
+        </div>
+        <div id="envios-list">
+            <div class="envio-item" data-nombre="Mouse Logitech">
+                <img src="imagenes/mouse/mouse-img3.webp" alt="Mouse Logitech" class="envio-img">
+                <div class="envio-info">
+                    <div class="envio-nombre">Mouse Logitech</div>
+                    <div class="envio-fecha">Enviado: 13 Sep 2025</div>
+                    <div class="envio-direccion">
+                        Dirección: 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Vitacura+1234,+Santiago" target="_blank">
+                            Av. Vitacura 1234, Santiago
+                        </a>
+                    </div>
+                </div>
+                <span class="envio-estado estado-entregado">Entregado</span>
+            </div>
+            <div class="envio-item" data-nombre="Teclado Ajazz">
+                <img src="imagenes/teclado/teclado-ajazz.jpg" alt="Teclado Ajazz" class="envio-img">
+                <div class="envio-info">
+                    <div class="envio-nombre">Teclado Ajazz</div>
+                    <div class="envio-fecha">Enviado: 7 Sep 2025</div>
+                    <div class="envio-direccion">
+                        Dirección: 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Calle+Falsa+123,+Providencia" target="_blank">
+                            Calle Falsa 123, Providencia
+                        </a>
+                    </div>
+                </div>
+                <span class="envio-estado estado-en-camino">En camino</span>
+            </div>
+            <div class="envio-item" data-nombre="Monitor">
+                <img src="imagenes/monitor/diagonal-monitor.jpg" alt="Monitor" class="envio-img">
+                <div class="envio-info">
+                    <div class="envio-nombre">Monitor</div>
+                    <div class="envio-fecha">Enviado: 1 Sep 2025</div>
+                    <div class="envio-direccion">
+                        Dirección: 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Apoquindo+5678,+Las+Condes" target="_blank">
+                            Av. Apoquindo 5678, Las Condes
+                        </a>
+                    </div>
+                </div>
+                <span class="envio-estado estado-pendiente">Pendiente</span>
+            </div>
+        </div>
+        <div class="envios-actions">
+            <a href="perfil.html" class="volver-btn">Volver al Perfil</a>
+            <a href="index.html" class="volver-btn">Volver a Home</a>
+        </div>
+    </div>
+    <script src="js/envios.js"></script>
+</body>
+</html>
