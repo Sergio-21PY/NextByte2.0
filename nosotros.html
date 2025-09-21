@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | NextByte</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Botones login/registro -->
+    <div class="user-actions">
+        <button class="user-link" onclick="showLogin()">Iniciar sesión</button>
+        <span class="separator">|</span>
+        <button class="user-link" onclick="showRegister()">Registrarse</button>
+    </div>
+
+    <!-- Fondo oscuro -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeForms()"></div>
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <span class="switch" onclick="showRegister()">Regístrate</span></p>
+    </div>
+
+    <!-- Modal Registro -->
+    <div id="register-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Registrarse</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <span class="switch" onclick="showLogin()">Inicia sesión</span></p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="imagenes/logo-empresa/logo-removebg-preview.png" class="logo-empresa" alt="NextByte Logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="productos.html" class="nav-link">Productos</a>
+                    <a href="nosotros.html" class="nav-link active">Nosotros</a>
+                    <a href="blogs.html" class="nav-link">Blogs</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="btnCarritoVistaPrevia" class="cart-btn">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </button>
+
+                    <div id="vista-previa-carrito" class="vista-previa-carrito">
+                        <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
+                        <ul id="lista-productos-previa"></ul>
+                        <div class="acciones-previa">
+                            <p>Total: <span id="total-previa">$0</span></p>
+                            <button id="btnVerCarritoCompleto">Pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="nosotros-container">
+        <!-- Sección Hero -->
+        <section class="hero-section">
+            <h1>Conoce a NextByte</h1>
+            <p>Tu partner tecnológico de confianza para llevar tu experiencia digital al siguiente nivel</p>
+        </section>
+
+        <!-- Sección Historia -->
+        <section class="historia-section">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="historia-content">
+                <div class="historia-text">
+                    <p>NextByte nació en 2025 con la visión de revolucionar el mercado tecnológico chileno. Fundada por
+                        un grupo de apasionados por la tecnología, nuestra empresa comenzó como un pequeño
+                        emprendimiento con grandes sueños.</p>
+                    <p>Hoy, después de años de crecimiento y evolución, nos hemos consolidado como referentes en el
+                        sector, ofreciendo productos de alta calidad y un servicio excepcional que nos distingue de la
+                        competencia.</p>
+                    <p>Nuestro compromiso con la innovación y la satisfacción del cliente nos ha permitido expandirnos,
+                        llegando a miles de hogares y empresas en todo el país con soluciones tecnológicas que
+                        transforman la manera de trabajar, jugar y crear.</p>
+                </div>
+                <div class="historia-imagen">
+                    <img src="imagenes\imagen.jpg" alt="Historia de NextByte">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión y Visión -->
+        <section class="mision-vision">
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>Proveer soluciones tecnológicas innovadoras y de alta calidad que empoderen a nuestros clientes,
+                    mejorando su productividad, entretenimiento y calidad de vida a través de productos confiables y un
+                    servicio excepcional.</p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Ser la tienda de tecnología preferida en Chile, reconocida por nuestra innovación, compromiso con el
+                    cliente y contribución al desarrollo tecnológico del país, inspirando a una nueva generación de
+                    amantes de la tecnología.</p>
+            </div>
+        </section>
+
+        <!-- Sección Equipo -->
+        <section class="equipo-section">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="equipo-grid">
+                <div class="miembro-equipo">
+                    <img src="imagenes\Mary Barra (1).webp" alt="Carlos Méndez" class="miembro-imagen">
+                    <div class="miembro-nombre">Ana Rodríguez</div>
+                    <div class="miembro-cargo">CEO & Fundadora</div>
+                    <p>Apasionada por la tecnología y la innovación con más de 15 años de experiencia en el sector.</p>
+                </div>
+                <div class="miembro-equipo">
+                    <img src="imagenes\sarah-chemouli-banco-santander.jpg" alt="Ana Rodríguez" class="miembro-imagen">
+                    <div class="miembro-nombre">María Paz Velazquez</div>
+                    <div class="miembro-cargo">Directora de Marketing</div>
+                    <p>Especialista en estrategias digitales y crecimiento de marcas en el ámbito tecnológico.</p>
+                </div>
+                <div class="miembro-equipo">
+                    <img src="imagenes\mejor-jefe-ventas_003.jpg" alt="Javier Soto" class="miembro-imagen">
+                    <div class="miembro-nombre">Javier Soto</div>
+                    <div class="miembro-cargo">Jefe de Ventas</div>
+                    <p>Conoce cada producto como la palma de su mano y siempre encuentra la solución perfecta para cada
+                        cliente.</p>
+                </div>
+                <div class="miembro-equipo">
+                    <img src="imagenes\stock-3-2048x1366-1-1024x683.jpg" alt="María Fernández" class="miembro-imagen">
+                    <div class="miembro-nombre">Pía Fernández</div>
+                    <div class="miembro-cargo">Gerente de Soporte Técnico</div>
+                    <p>Lidera nuestro equipo de soporte asegurando que cada cliente reciba la ayuda que necesita.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Valores -->
+        <section class="valores-section">
+            <h2 class="section-title">Nuestros Valores</h2>
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <div class="valor-icono">💡</div>
+                    <div class="valor-titulo">Innovación</div>
+                    <p>Buscamos constantemente nuevas formas de mejorar y estar a la vanguardia tecnológica.</p>
+                </div>
+                <div class="valor-item">
+                    <div class="valor-icono">🤝</div>
+                    <div class="valor-titulo">Confianza</div>
+                    <p>Construimos relaciones duraderas basadas en la honestidad y transparencia con nuestros clientes.
+                    </p>
+                </div>
+                <div class="valor-item">
+                    <div class="valor-icono">🚀</div>
+                    <div class="valor-titulo">Excelencia</div>
+                    <p>Nos esforzamos por superar expectativas en cada producto y servicio que ofrecemos.</p>
+                </div>
+                <div class="valor-item">
+                    <div class="valor-icono">❤️</div>
+                    <div class="valor-titulo">Pasión</div>
+                    <p>Amamos la tecnología y eso se refleja en nuestro trabajo y atención al cliente每一天.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="site-name">Next Byte</span>
+                    <div class="category-links">
+                        <a href="#" class="footer-link">Instagram</a>
+                        <span>|</span>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                    <div class="social-icons">
+                        <span class="social-icon">📧</span>
+                        <span class="social-icon">📘</span>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p class="newsletter-text">Mantente al día y únete a nuestro Newsletter.</p>
+                    <div class="newsletter-signup">
+                        <input type="email" placeholder="Tu correo" class="email-input">
+                        <button class="subscribe-btn">Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="js/carrito.js"></script>
+
+</body>
+
+</html>

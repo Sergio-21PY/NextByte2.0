@@ -70,7 +70,7 @@
     padding: 10px 20px;
     background-color: #4a148c;
     color: #fff;
-    border: none;
+    border: 1px solid #4a148c;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
