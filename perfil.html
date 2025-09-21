@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title" onclick="cambiar_texto(this)">NextByte   </h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historial.html">Historial    </a></li>
+                <li><a href="envios.html">Envios</a></li>
+                <li><button class="btn" onclick="eliminar(this)">Salir</button></li>
+            </ul>
+        </div>  
+    </div>  
+    <div class="container">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-2">
+                <div class="user-card">
+                    <div class="card-header">
+                        <img src="imagenes/admin/perfil.jpg"
+                            alt="manager_img" class="avatar-m">
+                    </div>
+                    <div class="card-body">
+                        <h1 id="nombre">Tú perfil</h1>
+                        <h3>
+                            <img src="imagenes/admin/map-marker.png" alt="pin" class="icon-s"> 
+                            Sucursal de Vitacura, Chile
+                        </h3>
+                        <p class="descripcion">
+                            Listo para comprar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="header">
+                        Más sobre nosotros.
+                    </div>
+                    <div class="card-body">
+                        <h4>-Marca numero uno en el mercado <br>-Precios accesibles para la comunidad <br>-Envio rapido en todo Chile</h4   >
+                        <p class="dates">Mar 2025 - Atualidad.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right column -->
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <span class="connections" id="califica-pendientes">2+</span>
+                        Califica tu compra
+                    </div>
+                    <div id="compras-container">
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="imagenes/mouse/mouse-img3.webp" alt="todd" class="avatar-s">
+                                <span>Mouse Logitech    </span>
+                            </span>
+                            <span class="end">
+                                <img src="imagenes/admin/accept-circle.png" alt="accept" class="avatar-s" onclick="calificarCompra(this, true)">
+                                <img src="imagenes/admin/close-circle.png" alt="decline" class="avatar-s" onclick="calificarCompra(this, false)">
+                            </span>
+                        </div>
+                        <div class="user-line">
+                            <span class="start">
+                                <img src="imagenes/teclado/teclado-ajazz.jpg" alt="phil" class="avatar-s">
+                                <span>Teclado.</span>
+                            </span>
+                            <span class="end">
+                                <img src="imagenes/admin/accept-circle.png" alt="accept" class="avatar-s" onclick="calificarCompra(this, true)">
+                                <img src="imagenes/admin/close-circle.png" alt="decline" class="avatar-s" onclick="calificarCompra(this, false)">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <span class="connections">1+</span>
+                        Historial 
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="imagenes/monitor/diagonal-monitor.jpg" alt="Myke" class="avatar-s">
+                            <span>Monitor.</span>
+                        </span>
+                    </div>  
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="imagenes/mouse/mouse-img3.webp" alt="Tony" class="avatar-s">
+                            <span>Mouse Logitech.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="imagenes/teclado/teclado-ajazz.jpg" alt="Clark" class="avatar-s">
+                            <span>Teclado.</span>
+                        </span>
+                    </div>
+                    <div class="footer">
+                        
+                        <a href="historial.html">Ver más</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <button onclick="cambiar_modo()">Dark Mode</button>
+
+    </div>
+    <script src="js/perfil.js"></script>
+</body>
+</html>
