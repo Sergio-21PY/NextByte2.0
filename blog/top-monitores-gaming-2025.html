@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Monitores Gaming 2025 | NextByte Blog</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/blog-individual.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Botones login/registro -->
+    <div class="user-actions">
+        <button class="user-link" onclick="showLogin()">Iniciar sesión</button>
+        <span class="separator">|</span>
+        <button class="user-link" onclick="showRegister()">Registrarse</button>
+    </div>
+
+    <!-- Fondo oscuro -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeForms()"></div>
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <span class="switch" onclick="showRegister()">Regístrate</span></p>
+    </div>
+
+    <!-- Modal Registro -->
+    <div id="register-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Registrarse</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <span class="switch" onclick="showLogin()">Inicia sesión</span></p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="../imagenes/logo-empresa/logo-removebg-preview.png" class="logo-empresa" alt="NextByte Logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../productos.html" class="nav-link">Productos</a>
+                    <a href="../nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="../blogs.html" class="nav-link active">Blogs</a>
+                    <a href="../contacto.html" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="btnCarritoVistaPrevia" class="cart-btn">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </button>
+
+                    <div id="vista-previa-carrito" class="vista-previa-carrito">
+                        <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
+                        <ul id="lista-productos-previa"></ul>
+                        <div class="acciones-previa">
+                            <p>Total: <span id="total-previa">$0</span></p>
+                            <button id="btnVerCarritoCompleto">Pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="blog-individual-container">
+        <!-- Cabecera del artículo -->
+        <header class="blog-header">
+            <div class="blog-breadcrumb">
+                <a href="../blogs.html">Blog</a> > <a href="#">Gaming</a> > Top 5 Monitores Gaming 2025
+            </div>
+            <h1>Top 5 Monitores Gaming 2025: Análisis y Comparativa</h1>
+            <div class="blog-meta-header">
+                <img src="../blog\imagenes\sergio.png" alt="Javier Soto" class="autor-avatar">
+                <div class="meta-info">
+                    <span class="autor-nombre">Por Sergio Soto</span>
+                    <span class="fecha-publicacion">15 Septiembre 2025</span>
+                    <span class="tiempo-lectura">12 min de lectura</span>
+                </div>
+                <div class="redes-sociales">
+                    <span>Compartir:</span>
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">💬</a>
+                    <a href="#" class="social-icon">📧</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Imagen destacada -->
+        <div class="blog-imagen-destacada">
+            <img src="../blog\imagenes\FUYAofwatKBmPuUzXDNM83-970-80.jpg.webp" alt="Top monitores gaming 2025">
+        </div>
+
+        <!-- Contenido del artículo -->
+        <article class="blog-contenido">
+            <div class="introduccion">
+                <p>El 2025 ha traído avances revolucionarios en tecnología de visualización para gaming. Desde paneles OLED con tasas de refresco ultra altas hasta nuevas tecnologías HDR, hemos testeado los modelos más destacados del mercado para ayudarte a encontrar el monitor perfecto para tu setup gaming.</p>
+            </div>
+
+            <h2>¿Qué Buscar en un Monitor Gaming en 2025?</h2>
+            <p>Antes de sumergirnos en el top 5, es crucial entender las características clave que definen un monitor gaming de alta gama este año:</p>
+            
+            <div class="caracteristicas-importantes">
+                <div class="caracteristica">
+                    <h3>🎯 Tasa de Refresco</h3>
+                    <p>Lo mínimo aceptable ahora es 240Hz, con opciones que llegan hasta 500Hz para competidores profesionales.</p>
+                </div>
+                <div class="caracteristica">
+                    <h3>🖥️ Tecnología de Panel</h3>
+                    <p>OLED domina la gama alta, mientras que Mini-LED ofrece excelente relación calidad-precio.</p>
+                </div>
+                <div class="caracteristica">
+                    <h3>🌈 HDR y Color</h3>
+                    <p>DisplayHDR 1000 como estándar y cobertura de 98% DCI-P3 para colores vibrantes y realistas.</p>
+                </div>
+                <div class="caracteristica">
+                    <h3>⚡ Tiempo de Respuesta</h3>
+                    <p>Menos de 1ms GTG se ha convertido en el estándar para evitar ghosting en movimientos rápidos.</p>
+                </div>
+            </div>
+
+            <h2>Nuestro Top 5 Monitores Gaming 2025</h2>
+
+            <!-- Monitor 1 -->
+            <div class="monitor-review">
+                <h3>#1 - Samsung Odyssey Neo G9 57" (2025 Edition)</h3>
+                <div class="review-content">
+                    <img src="../blog\imagenes\71w669qMzrL.jpg" alt="Samsung Odyssey Neo G9">
+                    <div class="review-details">
+                        <div class="especificaciones">
+                            <span><strong>Resolución:</strong> 7680x2160 (Dual 4K)</span>
+                            <span><strong>Tasa de Refresco:</strong> 240Hz</span>
+                            <span><strong>Panel:</strong> Quantum Mini-LED</span>
+                            <span><strong>HDR:</strong> DisplayHDR 1000</span>
+                            <span><strong>Precio:</strong> $1.499.990</span>
+                        </div>
+                        <div class="puntuacion">
+                            <span class="rating">9.8/10</span>
+                            <span class="premio">🏆 MEJOR GLOBAL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pros-contras">
+                    <div class="pros">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Inmersión absoluta con resolución dual 4K</li>
+                            <li>Brillo excepcional y negros profundos</li>
+                            <li>Curvatura 1000R perfecta para gaming</li>
+                            <li>Multitasking excelente con PIP/PBP</li>
+                        </ul>
+                    </div>
+                    <div class="contras">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Precio muy elevado</li>
+                            <li>Requiere GPU de gama muy alta</li>
+                            <li>Escritorio muy grande necesario</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="../monitor.html" class="btn-ver-producto">Ver producto en tienda</a>
+            </div>
+
+            <!-- Monitor 2 -->
+            <div class="monitor-review">
+                <h3>#2 - ASUS ROG Swift OLED PG32UCDM</h3>
+                <div class="review-content">
+                    <img src="../blog\imagenes\91t16+g29KL.jpg" alt="ASUS ROG Swift OLED">
+                    <div class="review-details">
+                        <div class="especificaciones">
+                            <span><strong>Resolución:</strong> 3840x2160 (4K)</span>
+                            <span><strong>Tasa de Refresco:</strong> 240Hz</span>
+                            <span><strong>Panel:</strong> OLED</span>
+                            <span><strong>HDR:</strong> DisplayHDR True Black 400</span>
+                            <span><strong>Precio:</strong> $990.990</span>
+                        </div>
+                        <div class="puntuacion">
+                            <span class="rating">9.5/10</span>
+                            <span class="premio">🥇 MEJOR OLED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pros-contras">
+                    <div class="pros">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Calidad OLED inigualable con negros perfectos</li>
+                            <li>Diseño ROG premium con iluminación RGB</li>
+                            <li>Tiempo de respuesta casi instantáneo (0.1ms)</li>
+                            <li>Excelente manejo de calor y anti-burn-in</li>
+                        </ul>
+                    </div>
+                    <div class="contras">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Brillo máximo limitado en escenas muy brillantes</li>
+                            <li>Precio todavía elevado</li>
+                            <li>Panel mate puede afectar negros en entornos muy iluminados</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn-ver-producto">Ver producto en tienda</a>
+            </div>
+
+            <!-- Monitor 3 -->
+            <div class="monitor-review">
+                <h3>#3 - Xiaomi G34WQi 2025 (Edición Especial)</h3>
+                <div class="review-content">
+                    <img src="../imagenes/monitor/frontal-monitor.jpg" alt="Xiaomi G34WQi 2025">
+                    <div class="review-details">
+                        <div class="especificaciones">
+                            <span><strong>Resolución:</strong> 3440x1440 (UWQHD)</span>
+                            <span><strong>Tasa de Refresco:</strong> 200Hz</span>
+                            <span><strong>Panel:</strong> VA</span>
+                            <span><strong>HDR:</strong> DisplayHDR 400</span>
+                            <span><strong>Precio:</strong> $194.990</span>
+                        </div>
+                        <div class="puntuacion">
+                            <span class="rating">9.2/10</span>
+                            <span class="premio">💰 MEJOR VALOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pros-contras">
+                    <div class="pros">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Precio excepcional para las características</li>
+                            <li>Ultrawide 34" perfecto para gaming y productividad</li>
+                            <li>Diseño minimalista y elegante</li>
+                            <li>Compatibilidad con consolas mejorada</li>
+                        </ul>
+                    </div>
+                    <div class="contras">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Panel VA con ángulos de visión menores que IPS/OLED</li>
+                            <li>HDR limitado compared to premium options</li>
+                            <li>Base ajustable básica</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="../monitor.html" class="btn-ver-producto">Ver producto en tienda</a>
+            </div>
+
+            <!-- Monitor 4 -->
+            <div class="monitor-review">
+                <h3>#4 - LG UltraGear 27GR95QE-B</h3>
+                <div class="review-content">
+                    <img src="../blog\imagenes\39145-1284-Monitor-Gamer-LG-UltraGear-de-27-2.jpg" alt="LG UltraGear OLED">
+                    <div class="review-details">
+                        <div class="especificaciones">
+                            <span><strong>Resolución:</strong> 2560x1440 (QHD)</span>
+                            <span><strong>Tasa de Refresco:</strong> 360Hz</span>
+                            <span><strong>Panel:</strong> OLED</span>
+                            <span><strong>HDR:</strong> DisplayHDR True Black 400</span>
+                            <span><strong>Precio:</strong> $890.990</span>
+                        </div>
+                        <div class="puntuacion">
+                            <span class="rating">9.3/10</span>
+                            <span class="premio">⚡ MEJOR COMPETITIVO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pros-contras">
+                    <div class="pros">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Tasa de refresco de 360Hz para gaming competitivo</li>
+                            <li>Calidad OLED con tiempo de respuesta increíble</li>
+                            <li>Tamaño 27" ideal para FPS y juegos rápidos</li>
+                            <li>Diseño gaming discreto y elegante</li>
+                        </ul>
+                    </div>
+                    <div class="contras">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Resolución QHD en lugar de 4K</li>
+                            <li>Brillo inferior a monitores Mini-LED</li>
+                            <li>Alto precio para resolución QHD</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn-ver-producto">Ver producto en tienda</a>
+            </div>
+
+            <!-- Monitor 5 -->
+            <div class="monitor-review">
+                <h3>#5 - Dell Alienware AW3225QF</h3>
+                <div class="review-content">
+                    <img src="../blog\imagenes\71reMUJfCqL.jpg" alt="Dell Alienware 4K">
+                    <div class="review-details">
+                        <div class="especificaciones">
+                            <span><strong>Resolución:</strong> 3840x2160 (4K)</span>
+                            <span><strong>Tasa de Refresco:</strong> 240Hz</span>
+                            <span><strong>Panel:</strong> QD-OLED</span>
+                            <span><strong>HDR:</strong> DisplayHDR True Black 400</span>
+                            <span><strong>Precio:</strong> $1.890.990</span>
+                        </div>
+                        <div class="puntuacion">
+                            <span class="rating">9.4/10</span>
+                            <span class="premio">🎨 MEJOR COLOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pros-contras">
+                    <div class="pros">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Tecnología QD-OLED con colores increíblemente vibrantes</li>
+                            <li>Diseño Alienware icónico y premium</li>
+                            <li>Soporte completo para consolas next-gen</li>
+                            <li>Garantía extendida y excelente soporte técnico</li>
+                        </ul>
+                    </div>
+                    <div class="contras">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Precio premium</li>
+                            <li>Diseño puede no gustar a quienes prefieren minimalismo</li>
+                            <li>Calor generado ligeramente superior a competidores</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn-ver-producto">Ver producto en tienda</a>
+            </div>
+
+            <h2>Tabla Comparativa</h2>
+            <div class="tabla-comparativa">
+                <div class="fila-titulo">
+                    <div>Modelo</div>
+                    <div>Resolución</div>
+                    <div>Refresh Rate</div>
+                    <div>Panel</div>
+                    <div>HDR</div>
+                    <div>Precio</div>
+                    <div>Puntuación</div>
+                </div>
+                <div class="fila-datos">
+                    <div>Samsung Odyssey Neo G9</div>
+                    <div>7680x2160</div>
+                    <div>240Hz</div>
+                    <div>Mini-LED</div>
+                    <div>HDR1000</div>
+                    <div>$2,499,000</div>
+                    <div>9.8/10</div>
+                </div>
+                <div class="fila-datos">
+                    <div>ASUS ROG Swift OLED</div>
+                    <div>3840x2160</div>
+                    <div>240Hz</div>
+                    <div>OLED</div>
+                    <div>True Black 400</div>
+                    <div>$1,899,000</div>
+                    <div>9.5/10</div>
+                </div>
+                <div class="fila-datos">
+                    <div>Xiaomi G34WQi</div>
+                    <div>3440x1440</div>
+                    <div>200Hz</div>
+                    <div>VA</div>
+                    <div>HDR400</div>
+                    <div>$599,990</div>
+                    <div>9.2/10</div>
+                </div>
+                <div class="fila-datos">
+                    <div>LG UltraGear</div>
+                    <div>2560x1440</div>
+                    <div>360Hz</div>
+                    <div>OLED</div>
+                    <div>True Black 400</div>
+                    <div>$1,299,000</div>
+                    <div>9.3/10</div>
+                </div>
+                <div class="fila-datos">
+                    <div>Dell Alienware</div>
+                    <div>3840x2160</div>
+                    <div>240Hz</div>
+                    <div>QD-OLED</div>
+                    <div>True Black 400</div>
+                    <div>$1,799,000</div>
+                    <div>9.4/10</div>
+                </div>
+            </div>
+
+            <div class="consejo-destacado">
+                <h3>🎮 Consejo de Experto</h3>
+                <p>El monitor ideal depende completamente de tu uso principal. Para gaming competitivo: prioriza tasa de refresco (240Hz+). Para single-player inmersivo: elige 4K OLED. Para presupuesto limitado: UWQHD ofrece la mejor experiencia inmersiva por el precio. Siempre considera si tu GPU puede manejar la resolución y tasa de refresco que deseas.</p>
+            </div>
+
+            <div class="blog-footer">
+                <div class="etiquetas">
+                    <span>Etiquetas:</span>
+                    <a href="#">monitores gaming</a>
+                    <a href="#">tecnología 2025</a>
+                    <a href="#">OLED</a>
+                    <a href="#">gaming</a>
+                    <a href="#">hardware</a>
+                </div>
+                <div class="redes-sociales-footer">
+                    <span>Comparte este artículo:</span>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="#" class="social-btn">Twitter</a>
+                    <a href="#" class="social-btn">LinkedIn</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sección de comentarios -->
+        <section class="seccion-comentarios">
+            <h2>Comentarios (7)</h2>
+            <div class="comentarios-lista">
+                <div class="comentario">
+                    <div class="comentario-contenido">
+                        <div class="comentario-header">
+                            <span class="nombre-usuario">Diego Martínez</span>
+                            <span class="fecha-comentario">Hace 1 día</span>
+                        </div>
+                        <p>Excelente análisis! Justo estaba considerando el Xiaomi G34WQi para mi setup. ¿Creen que una RTX 4070 pueda manejarlo bien en juegos AAA?</p>
+                        <button class="btn-respuesta">Responder</button>
+                    </div>
+                </div>
+                <div class="comentario">
+                    <div class="comentario-contenido">
+                        <div class="comentario-header">
+                            <span class="nombre-usuario">Carolina Vargas</span>
+                            <span class="fecha-comentario">Hace 3 días</span>
+                        </div>
+                        <p>Compré el ASUS ROG Swift OLED después de leer este artículo y estoy completamente enamorada. La calidad de imagen es increíble para both gaming y diseño gráfico.</p>
+                        <button class="btn-respuesta">Responder</button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="formulario-comentario">
+                <h3>Deja tu comentario</h3>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar-comentario">Publicar comentario</button>
+            </form>
+        </section>
+
+        <!-- Artículos relacionados -->
+        <section class="articulos-relacionados">
+            <h2>Artículos Relacionados</h2>
+            <div class="relacionados-grid">
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\Mini-LED-vs-OLED.webp" alt="OLED vs Mini-LED">
+                    <h3>OLED vs Mini-LED: ¿Qué Tecnología Elegir en 2025?</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\hq720.jpg" alt="Configuración monitor">
+                    <h3>Guía: Cómo Configurar tu Monitor Gaming para el Mejor Rendimiento</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\images.jpg" alt="Futuro de monitores">
+                    <h3>El Futuro de los Monitores: Tecnologías que Llegarán en 2026</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="site-name">Next Byte</span>
+                    <div class="category-links">
+                        <a href="#" class="footer-link">Instagram</a>
+                        <span>|</span>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                    <div class="social-icons">
+                        <span class="social-icon">📧</span>
+                        <span class="social-icon">📘</span>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p class="newsletter-text">Mantente al día y únete a nuestro Newsletter.</p>
+                    <div class="newsletter-signup">
+                        <input type="email" placeholder="Tu correo" class="email-input">
+                        <button class="subscribe-btn">Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/carrito.js"></script>
+
+</body>
+</html>

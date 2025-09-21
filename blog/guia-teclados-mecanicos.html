@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Teclados Mecánicos | NextByte Blog</title>
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/blog-individual.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Botones login/registro -->
+    <div class="user-actions">
+        <button class="user-link" onclick="showLogin()">Iniciar sesión</button>
+        <span class="separator">|</span>
+        <button class="user-link" onclick="showRegister()">Registrarse</button>
+    </div>
+
+    <!-- Fondo oscuro -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeForms()"></div>
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <span class="switch" onclick="showRegister()">Regístrate</span></p>
+    </div>
+
+    <!-- Modal Registro -->
+    <div id="register-modal" class="modal">
+        <button class="close-btn" onclick="closeForms()">×</button>
+        <h2>Registrarse</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <span class="switch" onclick="showLogin()">Inicia sesión</span></p>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="../imagenes/logo-empresa/logo-removebg-preview.png" class="logo-empresa" alt="NextByte Logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../productos.html" class="nav-link">Productos</a>
+                    <a href="../nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="../blogs.html" class="nav-link active">Blogs</a>
+                    <a href="../contacto.html" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="btnCarritoVistaPrevia" class="cart-btn">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </button>
+
+                    <div id="vista-previa-carrito" class="vista-previa-carrito">
+                        <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
+                        <ul id="lista-productos-previa"></ul>
+                        <div class="acciones-previa">
+                            <p>Total: <span id="total-previa">$0</span></p>
+                            <button id="btnVerCarritoCompleto">Pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="blog-individual-container">
+        <!-- Cabecera del artículo -->
+        <header class="blog-header">
+            <div class="blog-breadcrumb">
+                <a href="../blogs.html">Blog</a> > <a href="#">Tecnología</a> > Guía de Teclados Mecánicos
+            </div>
+            <h1>Guía Definitiva: Cómo Elegir el Mejor Teclado Mecánico para tus Necesidades</h1>
+            <div class="blog-meta-header">
+                <img src="../imagenes\milla.jpg"  class="autor-avatar">
+                <div class="meta-info">
+                    <span class="autor-nombre">Por Millaray Miranda</span>
+                    <span class="fecha-publicacion">10 Agosto 2025</span>
+                    <span class="tiempo-lectura">8 min de lectura</span>
+                </div>
+                <div class="redes-sociales">
+                    <span>Compartir:</span>
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">💬</a>
+                    <a href="#" class="social-icon">📧</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Imagen destacada -->
+        <div class="blog-imagen-destacada">
+            <img src="../blog/imagenes/diferencias-tipos-switch-teclado-7.jpg" alt="Guía completa de teclados mecánicos">
+        </div>
+
+        <!-- Contenido del artículo -->
+        <article class="blog-contenido">
+            <div class="introduccion">
+                <p>Los teclados mecánicos han revolucionado la experiencia de escritura y gaming, pero con la abrumadora cantidad de opciones disponibles, elegir el adecuado puede ser todo un desafío. En esta guía completa, te llevaré a través de todo lo que necesitas saber para tomar la mejor decisión.</p>
+            </div>
+
+            <h2>¿Por qué Elegir un Teclado Mecánico?</h2>
+            <p>Los teclados mecánicos ofrecen una experiencia táctil superior gracias a sus interruptores individuales debajo de cada tecla. A diferencia de los teclados de membrana, proporcionan:</p>
+            <ul>
+                <li>Mayor durabilidad (50-100 millones de pulsaciones)</li>
+                <li>Mejor retroalimentación táctil y auditiva</li>
+                <li>Actuación más consistente en todas las teclas</li>
+                <li>Personalización avanzada con keycaps intercambiables</li>
+            </ul>
+
+            <h2>Tipos de Switches: El Corazón de tu Teclado</h2>
+            <p>La elección del switch es la decisión más importante al comprar un teclado mecánico. Existen tres categorías principales:</p>
+
+            <div class="switch-comparacion">
+                <div class="switch-tipo">
+                    <h3>Switches Lineales (Red)</h3>
+                    <img src="../blog\imagenes\61nHU9yEw+L.jpg" alt="Switches lineales">
+                    <p>Suaves y consistentes en toda la pulsación, ideales para gaming. No tienen retroalimentación táctil ni auditiva.</p>
+                    <span class="switch-ejemplo">Ejemplos: Cherry MX Red, Gateron Red</span>
+                </div>
+                <div class="switch-tipo">
+                    <h3>Switches Táctiles (Brown)</h3>
+                    <img src="../blog\imagenes\wuque-ws-brown-tactile-switches-885018_2048x2048.webp" alt="Switches táctiles">
+                    <p>Ofrecen un bump táctil al activarse, perfectos para escritura y gaming. Silenciosos pero con feedback.</p>
+                    <span class="switch-ejemplo">Ejemplos: Cherry MX Brown, Gateron Brown</span>
+                </div>
+                <div class="switch-tipo">
+                    <h3>Switches Clicky (Blue)</h3>
+                    <img src="../blog\imagenes\61PEaKFwFwL.jpg" alt="Switches clicky">
+                    <p>Proporcionan feedback táctil y auditivo con un sonido de clic satisfactorio. Ideales para escritura.</p>
+                    <span class="switch-ejemplo">Ejemplos: Cherry MX Blue, Gateron Blue</span>
+                </div>
+            </div>
+
+            <h2>Tamaños y Layouts</h2>
+            <p>Los teclados mecánicos vienen en varios tamaños. Elige según tus necesidades de espacio y funcionalidad:</p>
+            
+            <div class="tabla-tamanos">
+                <div class="fila-titulo">
+                    <div>Tamaño</div>
+                    <div>Teclas</div>
+                    <div>Ventajas</div>
+                    <div>Recomendado para</div>
+                </div>
+                <div class="fila-datos">
+                    <div>100% (Full-size)</div>
+                    <div>104-108</div>
+                    <div>Todas las teclas incluido el pad numérico</div>
+                    <div>Oficina, contadores</div>
+                </div>
+                <div class="fila-datos">
+                    <div>TKL (Tenkeyless)</div>
+                    <div>87-88</div>
+                    <div>Más espacio para el mouse, mantiene teclas de función</div>
+                    <div>Gaming, escritores</div>
+                </div>
+                <div class="fila-datos">
+                    <div>75%</div>
+                    <div>84-85</div>
+                    <div>Compacto pero con flechas y teclas de función</div>
+                    <div>Usuarios que valoran espacio</div>
+                </div>
+                <div class="fila-datos">
+                    <div>60%</div>
+                    <div>61</div>
+                    <div>Muy portátil, minimalista</div>
+                    <div>Gamers profesionales, viajeros</div>
+                </div>
+            </div>
+
+            <h2>Nuestras Recomendaciones</h2>
+            
+            <div class="recomendacion-producto">
+                <img src="../imagenes/teclado/teclado-ajazz.jpg" alt="ATTACK SHARK Ajazz AK820 Pro">
+                <div class="recomendacion-info">
+                    <h3>ATTACK SHARK Ajazz AK820 Pro - Mejor Valor</h3>
+                    <p>Este teclado ofrece una excelente relación calidad-precio con switches Gateron, iluminación RGB y construcción sólida. Perfecto para quienes se inician en el mundo de los teclados mecánicos.</p>
+                    <a href="../teclado.html" class="btn-ver-producto">Ver producto</a>
+                </div>
+            </div>
+
+            <div class="recomendacion-producto">
+                <img src="../blog\imagenes\61OS8Ptfl2L.jpg" alt="Teclado mecánico premium">
+                <div class="recomendacion-info">
+                    <h3>Keychron K8 - Mejor Inalámbrico</h3>
+                    <p>Conectividad Bluetooth y USB-C, compatible con múltiples dispositivos y switches Hot-swappable para personalización total. Ideal para usuarios que trabajan con varios dispositivos.</p>
+                    <a href="#" class="btn-ver-producto">Ver producto</a>
+                </div>
+            </div>
+
+            <div class="consejo-destacado">
+                <h3>💡 Consejo Profesional</h3>
+                <p>Si es tu primer teclado mecánico, considera un kit de prueba de switches antes de comprar. Muchas tiendas especializadas ofrecen muestras de diferentes switches para que encuentres el que mejor se adapte a tu estilo.</p>
+            </div>
+
+            <div class="blog-footer">
+                <div class="etiquetas">
+                    <span>Etiquetas:</span>
+                    <a href="#">teclados mecánicos</a>
+                    <a href="#">gaming</a>
+                    <a href="#">tecnología</a>
+                    <a href="#">periféricos</a>
+                </div>
+                <div class="redes-sociales-footer">
+                    <span>Comparte este artículo:</span>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="#" class="social-btn">Twitter</a>
+                    <a href="#" class="social-btn">LinkedIn</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sección de comentarios -->
+        <section class="seccion-comentarios">
+            <h2>Comentarios (3)</h2>
+            <div class="comentarios-lista">
+                <div class="comentario">
+
+                    <div class="comentario-contenido">
+                        <div class="comentario-header">
+                            <span class="nombre-usuario">Carlos López</span>
+                            <span class="fecha-comentario">Hace 2 días</span>
+                        </div>
+                        <p>Excelente guía. Justo estaba buscando mi primer teclado mecánico y esta información es invaluable. ¿Recomiendan algún switch específico para programación?</p>
+                        <button class="btn-respuesta">Responder</button>
+                    </div>
+                </div>
+                <div class="comentario">
+                    <div class="comentario-contenido">
+                        <div class="comentario-header">
+                            <span class="nombre-usuario">María González</span>
+                            <span class="fecha-comentario">Hace 5 días</span>
+                        </div>
+                        <p>Llevo usando teclados mecánicos por 5 años y esta guía cubre todos los puntos importantes. Solo añadiría que los switches silent red son excelentes para oficinas.</p>
+                        <button class="btn-respuesta">Responder</button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="formulario-comentario">
+                <h3>Deja tu comentario</h3>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar-comentario">Publicar comentario</button>
+            </form>
+        </section>
+
+        <!-- Artículos relacionados -->
+        <section class="articulos-relacionados">
+            <h2>Artículos Relacionados</h2>
+            <div class="relacionados-grid">
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\500_333.jpeg" alt="Mecánico vs Membrana">
+                    <h3>Mecánico vs Membrana: ¿Cuál es la Real Diferencia?</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\650_1200.jpg" alt="Mantenimiento teclado">
+                    <h3>Guía de Mantenimiento: Cómo Limpiar tu Teclado Mecánico</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+                <article class="articulo-relacionado">
+                    <img src="../blog\imagenes\c18.webp" alt="Keycaps personalizadas">
+                    <h3>Personalización Extreme: El Mundo de los Keycaps Personalizados</h3>
+                    <a href="#">Leer más →</a>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="site-name">Next Byte</span>
+                    <div class="category-links">
+                        <a href="#" class="footer-link">Instagram</a>
+                        <span>|</span>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                    <div class="social-icons">
+                        <span class="social-icon">📧</span>
+                        <span class="social-icon">📘</span>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p class="newsletter-text">Mantente al día y únete a nuestro Newsletter.</p>
+                    <div class="newsletter-signup">
+                        <input type="email" placeholder="Tu correo" class="email-input">
+                        <button class="subscribe-btn">Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/carrito.js"></script>
+
+</body>
+</html>
