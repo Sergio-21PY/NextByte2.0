@@ -72,19 +72,28 @@ body {
 /* Carrito */
 .header-actions {
     position: relative;
+    display: inline-block; /* Añade esto */
 }
 
-.cart-btn {
+.cart-btn, #btnVerCarritoCompleto {
+    display: inline-block;
+    text-align: center;
     background: #ffeb3b;
+    color: #333;
     border: none;
     border-radius: 6px;
     padding: 8px 15px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
     transition: 0.3s;
+    margin-right: 5px;
+   
 }
+   
 
-.cart-btn:hover {
+
+.cart-btn:hover, #btnVerCarritoCompleto:hover {
     background: #fdd835;
 }
 
@@ -92,7 +101,7 @@ body {
     display: none;
     position: absolute;
     right: 0;
-    top: 45px;
+    top: 100%; /* Cambia de 45px a 100% */
     background: #fff;
     color: #333;
     border-radius: 8px;
@@ -100,7 +109,23 @@ body {
     padding: 15px;
     width: 250px;
     z-index: 2000;
+    /* Añade esto para que no se desborde */
+    box-sizing: border-box;
 }
+
+.acciones-previa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.acciones-previa p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
 
 
 

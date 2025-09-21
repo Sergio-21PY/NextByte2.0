@@ -32,20 +32,22 @@
                         <a href="contacto.html" class="nav-link">Contacto</a>
                     </nav>
 
-                    <div class="header-actions">
-                        <button id="btnCarritoVistaPrevia" class="cart-btn">
-                            🛒 Carrito (<span id="contador-carrito">0</span>)
-                        </button>
+                      <div class="header-actions">
+                    <button id="btnCarritoVistaPrevia" class="cart-btn">
+                        🛒 Carrito (<span id="contador-carrito">0</span>)
+                    </button>
 
-                        <div id="vista-previa-carrito" class="vista-previa-carrito">
-                            <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
-                            <ul id="lista-productos-previa"></ul>
-                            <div class="acciones-previa">
-                                <p>Total: <span id="total-previa">$0</span></p>
-                                <button id="btnVerCarritoCompleto">Ver Carrito</button>
-                            </div>
+                    <div id="vista-previa-carrito" class="vista-previa-carrito">
+                        <p id="carrito-vacio-texto" style="display: none;">El carrito está vacío.</p>
+                        <ul id="lista-productos-previa"></ul>
+                        <div class="acciones-previa">
+                            <p>Total: <span id="total-previa">$0</span></p>
+                            <a href="compra.html" id="btnVerCarritoCompleto">Comprar</a>
+                            <button id="btn-vaciar-carrito" class="cart-btn">Vaciar Carrito</button>
+
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </header>
@@ -86,8 +88,8 @@
                 <p>$42.990</p>
             </div>
             <div>
-                <button class="btn btn-comprar">Comprar</button>
-                <button class="btn btn-agregar">Agregar al carrito</button>
+                <a href="compra.html" id="btnVerCarritoCompleto">Comprar</a>
+                <button class="btn btn-agregar" id="btnVerCarritoCompleto">Agregar al carrito</button>
             </div>
 
 

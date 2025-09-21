@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NextByte</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/compra.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="checkout-container">
+        <ul id="lista-productos-checkout"></ul>
+        <div class="total" id="total-checkout">$0</div>
+
+        <form id="form-compra">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="direccion" placeholder="Dirección de envío" required>
+            <select id="metodo-pago" required>
+                <option value="">Método de pago</option>
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+            <button type="submit" class="confirmar">Confirmar Compra</button>
+        </form>
+
+        <div id="mensaje-exito">¡Compra realizada con éxito!</div>
+    </div>
+
+    <script src="js/logica-comra.js"></script>
+</body>
+</html>
