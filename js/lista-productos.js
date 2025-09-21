@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: 2,
-        nombre: "ATTACK SHARK Ajazz AK820 Pro",
+        nombre: "ATTACK SHARK Ajazz AK820",
         precio: 99990,
         categoria: "teclados",
         imagen: "imagenes/teclado/teclado-ajazz.jpg",
@@ -29,7 +29,7 @@ const productos = [
         nombre: "Silla Gamer Ergonómica",
         precio: 249990,
         categoria: "sillas",
-        imagen: "imagenes/silla/silla-gamer.jpg",
+        imagen: "imagenes/silla.webp",
         enlace: "silla.html"
     },
     {
@@ -37,7 +37,7 @@ const productos = [
         nombre: "Auriculares HyperX Cloud II",
         precio: 89990,
         categoria: "audio",
-        imagen: "imagenes/audio/auriculares-hyperx.jpg",
+        imagen: "imagenes/audifonosgamerhyperxcloudiiwirelessredusb71ps4xboxonepcymac.jpg",
         enlace: "auriculares.html"
     },
     {
@@ -45,7 +45,7 @@ const productos = [
         nombre: "Monitor Samsung Odyssey",
         precio: 299990,
         categoria: "monitores",
-        imagen: "imagenes/monitor/samsung-odyssey.jpg",
+        imagen: "imagenes/monitor-samsung-32p-g55c-odyssey-g5-qhd-165hz-gamer-curvo.jpg",
         enlace: "monitor-samsung.html"
     },
     {
@@ -53,7 +53,7 @@ const productos = [
         nombre: "Teclado Mecánico Redragon",
         precio: 59990,
         categoria: "teclados",
-        imagen: "imagenes/teclado/redragon.jpg",
+        imagen: "imagenes/teclado-redragon.jpg",
         enlace: "teclado-redragon.html"
     },
     {
@@ -61,7 +61,7 @@ const productos = [
         nombre: "Mouse Inalámbrico Razer",
         precio: 89990,
         categoria: "mouses",
-        imagen: "imagenes/mouse/razer.jpg",
+        imagen: "imagenes/mouse-lices.png",
         enlace: "mouse-razer.html"
     }
 ];
