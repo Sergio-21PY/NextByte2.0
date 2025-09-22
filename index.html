@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="css/nav-footer.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/inicio-sesion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
+
+   
+
 
     <!-- Botones login/registro -->
     <div class="user-actions">
@@ -29,9 +35,9 @@
     <div id="login-modal" class="modal">
         <button class="close-btn" onclick="closeForms()">×</button>
         <h2>Iniciar Sesión</h2>
-        <form>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
+        <form onsubmit="event.preventDefault(); loginUser();">
+            <input type="text" id="login-usuario" placeholder="Usuario" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
             <button type="submit">Entrar</button>
         </form>
         <p>¿No tienes cuenta? <span class="switch" onclick="showRegister()">Regístrate</span></p>
@@ -49,6 +55,16 @@
         </form>
         <p>¿Ya tienes cuenta? <span class="switch" onclick="showLogin()">Inicia sesión</span></p>
     </div>
+
+    <!-- Panel Usuario -->
+    <div id="user-panel" style="display:none; padding:20px; background:#f5f6fa; margin:20px 0; border-radius:8px;">
+        <h2>Panel de Usuario</h2>
+        <p>Bienvenido usuario normal</p>
+
+        
+    </div>
+
+
 
     <header class="header">
         <div class="container">
@@ -85,14 +101,16 @@
     <section class="hero">
         <div class="hero-content">
             <h1>La Tecnología del Futuro, Hoy</h1>
-            <p>Descubre los mejores productos tecnológicos para gaming, oficina y entretenimiento con los precios más competitivos del mercado.</p>
+            <p>Descubre los mejores productos tecnológicos para gaming, oficina y entretenimiento con los precios más
+                competitivos del mercado.</p>
             <div class="hero-buttons">
                 <a href="productos.html" class="btn-primary">Ver Productos</a>
                 <a href="nosotros.html" class="btn-secondary">Conócenos</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="imagenes\newslarge_20220504140959_Best-Products-for-an-Aesthetic-Gaming-Set-Up.jpg" alt="Setup Gaming NextByte">
+            <img src="imagenes\newslarge_20220504140959_Best-Products-for-an-Aesthetic-Gaming-Set-Up.jpg"
+                alt="Setup Gaming NextByte">
         </div>
     </section>
 
@@ -176,7 +194,8 @@
             <div class="testimonios-grid">
                 <div class="testimonio-card">
                     <div class="testimonio-text">
-                        <p>"Excelente servicio al cliente y productos de primera calidad. Mi nuevo monitor gaming superó todas mis expectativas."</p>
+                        <p>"Excelente servicio al cliente y productos de primera calidad. Mi nuevo monitor gaming superó
+                            todas mis expectativas."</p>
                     </div>
                     <div class="testimonio-autor">
                         <div>
@@ -187,7 +206,8 @@
                 </div>
                 <div class="testimonio-card">
                     <div class="testimonio-text">
-                        <p>"La asesoría técnica que recibí fue invaluable. Me ayudaron a armar el setup perfecto para home office."</p>
+                        <p>"La asesoría técnica que recibí fue invaluable. Me ayudaron a armar el setup perfecto para
+                            home office."</p>
                     </div>
                     <div class="testimonio-autor">
                         <div>
@@ -198,7 +218,8 @@
                 </div>
                 <div class="testimonio-card">
                     <div class="testimonio-text">
-                        <p>"Entrega rápida y productos bien empaquetados. Los precios son los mejores que he encontrado en Chile."</p>
+                        <p>"Entrega rápida y productos bien empaquetados. Los precios son los mejores que he encontrado
+                            en Chile."</p>
                     </div>
                     <div class="testimonio-autor">
                         <div>
@@ -220,7 +241,8 @@
                     <img src="blog/imagenes/diferencias-tipos-switch-teclado-7.jpg" alt="Guía Teclados Mecánicos">
                     <div class="blog-content">
                         <h3>Guía Definitiva: Cómo Elegir tu Teclado Mecánico</h3>
-                        <p>Descubre todo lo que necesitas saber sobre switches, layouts y características para encontrar el teclado perfecto.</p>
+                        <p>Descubre todo lo que necesitas saber sobre switches, layouts y características para encontrar
+                            el teclado perfecto.</p>
                         <a href="blog/guia-teclados-mecanicos.html" class="blog-link">Leer más →</a>
                     </div>
                 </article>
@@ -228,7 +250,8 @@
                     <img src="blog\imagenes\FUYAofwatKBmPuUzXDNM83-970-80.jpg.webp" alt="Monitores Gaming 2025">
                     <div class="blog-content">
                         <h3>Top 5 Monitores Gaming 2025: Análisis Completo</h3>
-                        <p>Revisamos los mejores monitores del año para gaming competitivo y experiencias inmersivas.</p>
+                        <p>Revisamos los mejores monitores del año para gaming competitivo y experiencias inmersivas.
+                        </p>
                         <a href="blog/top-monitores-gaming-2025.html" class="blog-link">Leer más →</a>
                     </div>
                 </article>
@@ -271,4 +294,5 @@
     <script src="js/home.js"></script>
 
 </body>
+
 </html>
